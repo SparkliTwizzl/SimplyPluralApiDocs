@@ -1,14 +1,14 @@
 ---
 id: add-comment
 title: "Add comment"
-description: "Add a Comment by (optionally) an Id"
+description: "Add a Comment, optionally by an Id"
 sidebar_label: "Add comment"
 hide_title: true
 hide_table_of_contents: true
 api:
   {
     "security": [{ "APITokenAuth": [] }],
-    "description": "Add a Comment by (optionally) an Id",
+    "description": "Add a Comment, optionally by an Id",
     "parameters":
       [
         {
@@ -83,7 +83,7 @@ api:
     "postman":
       {
         "name": "Add comment",
-        "description": { "content": "Add a Comment by (optionally) an Id", "type": "text/plain" },
+        "description": { "content": "Add a Comment, optionally by an Id", "type": "text/plain" },
         "url":
           {
             "path": ["v1", "comment", ":docId"],
@@ -135,7 +135,7 @@ import TabItem from "@theme/TabItem";
 
 <MethodEndpoint method={"post"} path={"/v1/comment/{docId}"}></MethodEndpoint>
 
-Add a Comment by (optionally) an Id
+Add a Comment, optionally by an Id
 
 <details
   style={{ marginBottom: "1rem" }}

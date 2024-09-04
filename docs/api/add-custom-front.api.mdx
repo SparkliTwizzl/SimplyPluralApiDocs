@@ -1,14 +1,14 @@
 ---
 id: add-custom-front
 title: "Add custom front"
-description: "Add a Custom Front by (optionally) an Id"
+description: "Add a Custom Front, optionally by an Id"
 sidebar_label: "Add custom front"
 hide_title: true
 hide_table_of_contents: true
 api:
   {
     "security": [{ "APITokenAuth": [] }],
-    "description": "Add a Custom Front by (optionally) an Id",
+    "description": "Add a Custom Front, optionally by an Id",
     "requestBody":
       {
         "required": true,
@@ -86,7 +86,7 @@ api:
       {
         "name": "Add custom front",
         "description":
-          { "content": "Add a Custom Front by (optionally) an Id", "type": "text/plain" },
+          { "content": "Add a Custom Front, optionally by an Id", "type": "text/plain" },
         "url":
           {
             "path": ["v1", "customFront", ":docId"],
@@ -138,7 +138,7 @@ import TabItem from "@theme/TabItem";
 
 <MethodEndpoint method={"post"} path={"/v1/customFront/{docId}"}></MethodEndpoint>
 
-Add a Custom Front by (optionally) an Id
+Add a Custom Front, optionally by an Id
 
 <details
   style={{ marginBottom: "1rem" }}

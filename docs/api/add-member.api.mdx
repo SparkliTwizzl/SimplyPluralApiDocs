@@ -1,14 +1,14 @@
 ---
 id: add-member
 title: "Add member"
-description: "Add a member by (optionally) an Id"
+description: "Add a member, optionally by an Id"
 sidebar_label: "Add member"
 hide_title: true
 hide_table_of_contents: true
 api:
   {
     "security": [{ "APITokenAuth": [] }],
-    "description": "Add a member by (optionally) an Id",
+    "description": "Add a member, optionally by an Id",
     "tags": ["Members"],
     "requestBody":
       {
@@ -112,7 +112,7 @@ api:
     "postman":
       {
         "name": "Add member",
-        "description": { "content": "Add a member by (optionally) an Id", "type": "text/plain" },
+        "description": { "content": "Add a member, optionally by an Id", "type": "text/plain" },
         "url":
           {
             "path": ["v1", "member", ":docId"],
@@ -164,7 +164,7 @@ import TabItem from "@theme/TabItem";
 
 <MethodEndpoint method={"post"} path={"/v1/member/{docId}"}></MethodEndpoint>
 
-Add a member by (optionally) an Id
+Add a member, optionally by an Id
 
 <details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"in":"path","name":"docId","schema":{"type":"string"},"required":true,"description":"String Id of the member"}}></ParamsItem></ul></div></details><MimeTabs className={"openapi-tabs__mime"}><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Request Body</strong><strong style={{"fontSize":"var(--ifm-code-font-size)","color":"var(--openapi-required)"}}> required</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"name"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"Name of the member","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"desc"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"Description of the member","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"color"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"Color of the object (\\#ffffff, \\#ffffffff or ffffff)","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"pronouns"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"Pronouns of the member","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"pkId"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"PluralKit ID of the member, 5-letter string","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"avatarUrl"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"URL for the avatar","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"private"} required={false} schemaName={"boolean"} qualifierMessage={undefined} schema={{"description":"Whether this object is private","type":"boolean"}}></SchemaItem><SchemaItem collapsible={false} name={"preventTrusted"} required={false} schemaName={"boolean"} qualifierMessage={undefined} schema={{"description":"Wheter trusted friends are prevented from seeing this private object","type":"boolean"}}></SchemaItem><SchemaItem collapsible={false} name={"supportDescMarkdown"} required={false} schemaName={"boolean"} qualifierMessage={undefined} schema={{"description":"Whether the description supports markdown","type":"boolean"}}></SchemaItem><SchemaItem collapsible={false} name={"preventsFrontNotifs"} required={false} schemaName={"boolean"} qualifierMessage={undefined} schema={{"description":"Whether to prefer front notification changes","type":"boolean"}}></SchemaItem><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><strong>info</strong><span style={{"opacity":"0.6"}}> object</span></summary><div style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
 

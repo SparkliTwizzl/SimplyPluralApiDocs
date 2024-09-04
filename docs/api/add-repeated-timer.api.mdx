@@ -1,14 +1,14 @@
 ---
 id: add-repeated-timer
 title: "Add repeated timer"
-description: "Add an Repeated Timer by (optionally) an Id"
+description: "Add an Repeated Timer, optionally by an Id"
 sidebar_label: "Add repeated timer"
 hide_title: true
 hide_table_of_contents: true
 api:
   {
     "security": [{ "APITokenAuth": [] }],
-    "description": "Add an Repeated Timer by (optionally) an Id",
+    "description": "Add an Repeated Timer, optionally by an Id",
     "parameters":
       [
         {
@@ -89,7 +89,7 @@ api:
       {
         "name": "Add repeated timer",
         "description":
-          { "content": "Add an Repeated Timer by (optionally) an Id", "type": "text/plain" },
+          { "content": "Add an Repeated Timer, optionally by an Id", "type": "text/plain" },
         "url":
           {
             "path": ["v1", "timer", "repeated", ":docId"],
@@ -144,7 +144,7 @@ import TabItem from "@theme/TabItem";
 
 <MethodEndpoint method={"post"} path={"/v1/timer/repeated/{docId}"}></MethodEndpoint>
 
-Add an Repeated Timer by (optionally) an Id
+Add an Repeated Timer, optionally by an Id
 
 <details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"in":"path","name":"docId","schema":{"type":"string"},"required":true,"description":"String Id of the Repeated Timer"}}></ParamsItem></ul></div></details><MimeTabs className={"openapi-tabs__mime"}><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Request Body</strong><strong style={{"fontSize":"var(--ifm-code-font-size)","color":"var(--openapi-required)"}}> required</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"name"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"Name of the reminder","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"message"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"Message the reminder sends","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"dayInterval"} required={false} schemaName={"integer"} qualifierMessage={undefined} schema={{"description":"Day interval between the reminders are sent","type":"integer"}}></SchemaItem><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><strong>time</strong><span style={{"opacity":"0.6"}}> object</span></summary><div style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
 

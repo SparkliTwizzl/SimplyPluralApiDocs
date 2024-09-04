@@ -1,14 +1,14 @@
 ---
 id: get-front-history-from-member
 title: "Get front history from member"
-description: "Get Front History from a member, optionally beteen two timestamps"
+description: "Get Front History from a member, optionally between two timestamps"
 sidebar_label: "Get front history from member"
 hide_title: true
 hide_table_of_contents: true
 api:
   {
     "security": [{ "APITokenAuth": [] }],
-    "description": "Get Front History from a member, optionally beteen two timestamps",
+    "description": "Get Front History from a member, optionally between two timestamps",
     "tags": ["Front History"],
     "parameters":
       [
@@ -24,7 +24,7 @@ api:
           "name": "memberId",
           "schema": { "type": "string" },
           "required": true,
-          "description": "Member you wish to get the history from",
+          "description": "String Id of the member",
         },
       ],
     "responses": { "200": { "description": "OK" }, "404": { "description": "NOT FOUND" } },
@@ -45,7 +45,7 @@ api:
         "name": "Get front history from member",
         "description":
           {
-            "content": "Get Front History from a member, optionally beteen two timestamps",
+            "content": "Get Front History from a member, optionally between two timestamps",
             "type": "text/plain",
           },
         "url":
@@ -108,7 +108,7 @@ import TabItem from "@theme/TabItem";
 
 <MethodEndpoint method={"get"} path={"/v1/frontHistory/member/{memberId}"}></MethodEndpoint>
 
-Get Front History from a member, optionally beteen two timestamps
+Get Front History from a member, optionally between two timestamps
 
 <details
   style={{ marginBottom: "1rem" }}

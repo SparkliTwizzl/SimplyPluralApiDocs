@@ -1,14 +1,14 @@
 ---
 id: add-poll
 title: "Add poll"
-description: "Add a Poll by (optionally) an Id"
+description: "Add a Poll, optionally by an Id"
 sidebar_label: "Add poll"
 hide_title: true
 hide_table_of_contents: true
 api:
   {
     "security": [{ "APITokenAuth": [] }],
-    "description": "Add a Poll by (optionally) an Id",
+    "description": "Add a Poll, optionally by an Id",
     "parameters":
       [
         {
@@ -120,7 +120,7 @@ api:
     "postman":
       {
         "name": "Add poll",
-        "description": { "content": "Add a Poll by (optionally) an Id", "type": "text/plain" },
+        "description": { "content": "Add a Poll, optionally by an Id", "type": "text/plain" },
         "url":
           {
             "path": ["v1", "poll", ":docId"],
@@ -172,7 +172,7 @@ import TabItem from "@theme/TabItem";
 
 <MethodEndpoint method={"post"} path={"/v1/poll/{docId}"}></MethodEndpoint>
 
-Add a Poll by (optionally) an Id
+Add a Poll, optionally by an Id
 
 <details style={{"marginBottom":"1rem"}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"in":"path","name":"docId","schema":{"type":"string"},"required":true,"description":"String Id of the Poll"}}></ParamsItem></ul></div></details><MimeTabs className={"openapi-tabs__mime"}><TabItem label={"application/json"} value={"application/json-schema"}><details style={{}} className={"openapi-markdown__details"} data-collapsed={false} open={true}><summary style={{"textAlign":"left"}}><strong>Request Body</strong><strong style={{"fontSize":"var(--ifm-code-font-size)","color":"var(--openapi-required)"}}> required</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><SchemaItem collapsible={false} name={"name"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"Name of the poll","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"desc"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"description":"Description of the poll","type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"allowAbstain"} required={false} schemaName={"boolean"} qualifierMessage={undefined} schema={{"description":"Whether this poll allows abstained votes","type":"boolean"}}></SchemaItem><SchemaItem collapsible={false} name={"allowVeto"} required={false} schemaName={"boolean"} qualifierMessage={undefined} schema={{"description":"Whether this poll allows veto votes","type":"boolean"}}></SchemaItem><SchemaItem collapsible={false} name={"custom"} required={false} schemaName={"boolean"} qualifierMessage={undefined} schema={{"description":"Whether this poll is a custom vote with custom answers","type":"boolean"}}></SchemaItem><SchemaItem collapsible={false} name={"endTime"} required={false} schemaName={""} qualifierMessage={undefined} schema={{"description":"Milliseconds since epoch for this timestamp/date"}}></SchemaItem><SchemaItem collapsible={false} name={"supportDescMarkdown"} required={false} schemaName={""} qualifierMessage={undefined} schema={{"description":"Whether the description supports markdown"}}></SchemaItem><SchemaItem collapsible={true} className={"schemaItem"}><details style={{}} className={"openapi-markdown__details"}><summary style={{}}><strong>options</strong><span style={{"opacity":"0.6"}}> object[]</span></summary><div style={{"marginLeft":"1rem"}}><div style={{"marginTop":".5rem","marginBottom":".5rem"}}>
 

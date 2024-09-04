@@ -143,7 +143,7 @@ paths:
       security:
         - APITokenAuth: []
       summary: "Add member"
-      description: "Add a member by (optionally) an Id"
+      description: "Add a member, optionally by an Id"
       tags:
         - Members
       requestBody:
@@ -239,7 +239,7 @@ paths:
       security:
         - APITokenAuth: []
       summary: "Add group"
-      description: "Add a group by (optionally) an Id"
+      description: "Add a group, optionally by an Id"
       tags:
         - Groups
       requestBody:
@@ -333,7 +333,7 @@ paths:
       security:
         - APITokenAuth: []
       summary: "Add note"
-      description: "Add a note by (optionally) an Id"
+      description: "Add a note, optionally by an Id"
       requestBody:
         required: true
         content:
@@ -464,7 +464,7 @@ paths:
       security:
         - APITokenAuth: []
       summary: "Add custom front"
-      description: "Add a Custom Front by (optionally) an Id"
+      description: "Add a Custom Front, optionally by an Id"
       requestBody:
         required: true
         content:
@@ -572,7 +572,7 @@ paths:
       security:
         - APITokenAuth: []
       summary: "Add comment"
-      description: "Add a Comment by (optionally) an Id"
+      description: "Add a Comment, optionally by an Id"
       parameters:
         - in: path
           name: docId
@@ -695,7 +695,7 @@ paths:
       security:
         - APITokenAuth: []
       summary: "Add poll"
-      description: "Add a Poll by (optionally) an Id"
+      description: "Add a Poll, optionally by an Id"
       parameters:
         - in: path
           name: docId
@@ -818,7 +818,7 @@ paths:
       security:
         - APITokenAuth: []
       summary: "Add automated timer"
-      description: "Add an Automated Timer by (optionally) an Id"
+      description: "Add an Automated Timer, optionally by an Id"
       parameters:
         - in: path
           name: docId
@@ -936,7 +936,7 @@ paths:
       security:
         - APITokenAuth: []
       summary: "Add repeated timer"
-      description: "Add an Repeated Timer by (optionally) an Id"
+      description: "Add an Repeated Timer, optionally by an Id"
       parameters:
         - in: path
           name: docId
@@ -1062,7 +1062,7 @@ paths:
       security:
         - APITokenAuth: []
       summary: "Get front history from member"
-      description: "Get Front History from a member, optionally beteen two timestamps"
+      description: "Get Front History from a member, optionally between two timestamps"
       tags:
         - Front History
       parameters:
@@ -1108,7 +1108,7 @@ paths:
       security:
         - APITokenAuth: []
       summary: "Add front history entry"
-      description: "Add a Front history entry by (optionally) an Id"
+      description: "Add a Front history entry, optionally by an Id"
       tags:
         - Front History
       requestBody:
@@ -1178,13 +1178,13 @@ paths:
     get:
       security:
         - APITokenAuth: []
-      summary: "Get your authed user Id"
-      description: "Get the user Id associated with your currently authed token"
+      summary: "Get your authed String Id"
+      description: "Get the String Id associated with your currently authed token"
       tags:
         - Users
       responses:
         "200":
-          description: "{Your user id}"
+          description: "{Your String Id}"
         "404":
           description: NOT FOUND
 
@@ -1503,7 +1503,7 @@ paths:
         schema:
           type: string
         required: true
-        description: The member id to sync
+        description: The String Id to sync
     patch:
       security:
         - APITokenAuth: []
@@ -1994,7 +1994,7 @@ paths:
       parameters:
         - name: Start and End Times
           in: query
-          description: 'Start and End times in '
+          description: "Start and End times in "
           required: true
           schema:
             type: object

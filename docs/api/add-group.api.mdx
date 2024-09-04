@@ -1,14 +1,14 @@
 ---
 id: add-group
 title: "Add group"
-description: "Add a group by (optionally) an Id"
+description: "Add a group, optionally by an Id"
 sidebar_label: "Add group"
 hide_title: true
 hide_table_of_contents: true
 api:
   {
     "security": [{ "APITokenAuth": [] }],
-    "description": "Add a group by (optionally) an Id",
+    "description": "Add a group, optionally by an Id",
     "tags": ["Groups"],
     "requestBody":
       {
@@ -87,7 +87,7 @@ api:
     "postman":
       {
         "name": "Add group",
-        "description": { "content": "Add a group by (optionally) an Id", "type": "text/plain" },
+        "description": { "content": "Add a group, optionally by an Id", "type": "text/plain" },
         "url":
           {
             "path": ["v1", "group", ":docId"],
@@ -129,7 +129,7 @@ import TabItem from "@theme/TabItem";
 
 <MethodEndpoint method={"post"} path={"/v1/group/{docId}"}></MethodEndpoint>
 
-Add a group by (optionally) an Id
+Add a group, optionally by an Id
 
 <MimeTabs className={"openapi-tabs__mime"}>
   <TabItem label={"application/json"} value={"application/json-schema"}>
