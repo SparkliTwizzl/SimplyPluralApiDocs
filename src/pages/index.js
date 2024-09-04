@@ -1,15 +1,15 @@
-import React from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import styles from './styles.module.css';
+import React from "react";
+import clsx from "clsx";
+import Layout from "@theme/Layout";
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import styles from "./styles.module.css";
 
 const features = [
   {
-    title: 'Getting Started',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: "Getting Started",
+    imageUrl: "img/undraw_docusaurus_tree.svg",
     url: "/docs/getting-started/intro",
     description: (
       <>
@@ -18,8 +18,8 @@ const features = [
     ),
   },
   {
-    title: 'API Reference',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: "API Reference",
+    imageUrl: "img/undraw_docusaurus_react.svg",
     url: "/docs/api/simply-plural-api",
     description: (
       <>
@@ -32,7 +32,7 @@ const features = [
 function Feature({ imageUrl, title, url, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <a href={url} className={clsx('col col--6', styles.feature) + " feature"}>
+    <a href={url} className={clsx("col col--6", styles.feature) + " feature"}>
       {imgUrl && (
         <div className="text--center">
           <img className={styles.featureImage} src={imgUrl} alt={title} />
@@ -51,14 +51,14 @@ function Home() {
     <Layout
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div class="row justify-center"> <div className={styles.buttons}>
             <Link
               className={clsx(
-                'button button--outline button--secondary button--lg',
+                "button button--outline button--secondary button--lg",
                 styles.getStarted,
               )}
               to="https://play.google.com/store/apps/details?id=com.saltypandastudios.frontime">
@@ -69,10 +69,10 @@ function Home() {
             <div className={styles.buttons}>
               <Link
                 className={clsx(
-                  'button button--outline button--secondary button--lg',
+                  "button button--outline button--secondary button--lg",
                   styles.getStarted,
                 )}
-                to={useBaseUrl('docs/intro')}>
+                to={useBaseUrl("docs/intro")}>
                 Go to docs
               </Link>
             </div>

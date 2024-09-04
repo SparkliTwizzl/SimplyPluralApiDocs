@@ -5,6 +5,6 @@ sidebar_label: Help
 slug: /help/
 ---
 
-import DocCardList from '@theme/DocCardList';
+import DocCardList from "@theme/DocCardList";
 
 <DocCardList />

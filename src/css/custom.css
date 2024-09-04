@@ -21,18 +21,18 @@
   --ifm-method-get: rgb(54, 99, 136);
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-background-surface-color: #4C4753 !important;
   --ifm-background-color: #1E1C21 !important;
   --ifm-hero-background-color: #131613 !important;
 }
 
-[data-theme='light'] {
+[data-theme="light"] {
   --ifm-color-primary: rgb(110, 27, 245);
   --ifm-button-background-color: white;
 }
 
-[data-theme='light'] .button--outline {
+[data-theme="light"] .button--outline {
   --ifm-button-background-color: white;
 }
 
@@ -88,7 +88,7 @@
   transition-duration: 3s;
 }
 
-[data-theme='dark'] .feature:hover {
+[data-theme="dark"] .feature:hover {
   text-decoration: none;
   background-color: #3d3b42;
   border-radius: 5px;
@@ -97,7 +97,7 @@
   color: white
 }
 
-[data-theme='light'] .feature:hover {
+[data-theme="light"] .feature:hover {
   text-decoration: none;
   background-color: #584185;
   border-radius: 5px;

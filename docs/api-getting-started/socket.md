@@ -9,12 +9,11 @@ slug: /getting-started/socket
 
 To create a socket connection please connect to either of the below Urls:
 
-** Production **  
-`wss://api.apparyllis.com/v1/socket`  
+** Production **
+`wss://api.apparyllis.com/v1/socket`
 
-** Pretesting **  
-`wss://devapi.apparyllis.com/v1/socket`  
-
+** Pretesting **
+`wss://devapi.apparyllis.com/v1/socket`
 
 ## Authenticating
 
@@ -23,6 +22,7 @@ Once connected to the socket you will need to authenticate, you can do this by s
 ```js title"payload"
 {'op': 'authenticate', 'token': "insert-your-token-here"}
 ```
+
 You will receive one of two messages:
 
 `Authentication violation: Token is missing or invalid. Goodbye :)`
@@ -37,8 +37,9 @@ Otherwise if there's no violation you are fully authenticated and you will recei
 
 ## Keeping alive
 
-You will need to keep the connection alive to make sure it doesn't drop.  
+You will need to keep the connection alive to make sure it doesn't drop.
 To do so simply send the following string to the socket every 10 seconds:
+
 ```js title"payload"
 ping
 ```
@@ -60,4 +61,3 @@ When an insert, update or delete happens on one of your authenticated users' dat
     ]
 }
 ```
-

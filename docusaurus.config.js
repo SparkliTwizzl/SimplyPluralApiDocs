@@ -1,47 +1,46 @@
 module.exports = {
-  title: 'Apparyllis',
-  tagline: 'Creating apps, for you.',
-  url: 'https://simplyplural.apparyllis.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/logo.png',
-  organizationName: 'apparyllis', // Usually your GitHub org/user name.
-  projectName: 'SimplyPluralDocs', // Usually your repo name.
+  title: "Apparyllis",
+  tagline: "Creating apps, for you.",
+  url: "https://simplyplural.apparyllis.com",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/logo.png",
+  organizationName: "apparyllis",
+  projectName: "SimplyPluralDocs",
   themeConfig: {
     navbar: {
-      title: 'Apparyllis',
+      title: "Apparyllis",
       logo: {
-        alt: 'Simply Plural Logo',
-        src: 'img/logo.png',
+        alt: "Simply Plural Logo",
+        src: "img/logo.png",
       },
       items: [
         {
-          to: 'docs/intro',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          to: "docs/intro",
+          activeBasePath: "docs",
+          label: "Docs",
+          position: "left",
         },
         { to: "docs/getting-started/intro", label: "API", position: "left" },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Discord',
-              href: 'https://discord.gg/hcWGEJVFQb',
+              label: "Discord",
+              href: "https://discord.gg/hcWGEJVFQb",
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/apparyllis',
+              label: "Twitter",
+              href: "https://twitter.com/apparyllis",
             },
           ],
         },
-
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Apparyllis U.G.`,
     },
@@ -49,7 +48,7 @@ module.exports = {
 
   plugins: [
     [
-      'docusaurus-plugin-openapi-docs',
+      "docusaurus-plugin-openapi-docs",
       {
         id: "simplyPluralApi",
         docsPluginId: "classic",
@@ -62,37 +61,34 @@ module.exports = {
               categoryLinkSource: "tag",
               groupPathsBy: "tag",
             },
-          }
-        }
+          },
+        },
       },
-    ]
+    ],
   ],
-
 
   presets: [
     [
       "classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
+      /** @type {import("@docusaurus/preset-classic").Options} */
       ({
         googleTagManager: false,
         googleAnalytics: false,
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl:
-            "https://github.com/ApparyllisOrg/SimplyPluralApiDocs",
+          editUrl: "https://github.com/ApparyllisOrg/SimplyPluralApiDocs",
           docLayoutComponent: "@theme/DocPage",
-          docItemComponent: "@theme/ApiItem"
+          docItemComponent: "@theme/ApiItem",
         },
         blog: {
           showReadingTime: true,
-          editUrl:
-            "https://github.com/ApparyllisOrg/SimplyPluralApiDocs"
+          editUrl: "https://github.com/ApparyllisOrg/SimplyPluralApiDocs",
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css")
-        }
-      })
-    ]
+          customCss: require.resolve("./src/css/custom.css"),
+        },
+      }),
+    ],
   ],
   themes: ["docusaurus-theme-openapi-docs"],
   stylesheets: [

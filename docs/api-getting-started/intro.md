@@ -14,13 +14,13 @@ We have two servers that you can connect to, Pretesting and Production.
 If you want to test out your integration we recommend you use Pretesting as that doesn't affect Production.
 If you want to run your integration on your actual account, use Production.
 
-** Production **  
-`https://api.apparyllis.com`  
-`wss://api.apparyllis.com/v1/socket`  
+** Production **
+`https://api.apparyllis.com`
+`wss://api.apparyllis.com/v1/socket`
 
-** Pretesting **  
-`https://devapi.apparyllis.com`  
-`wss://devapi.apparyllis.com/v1/socket`  
+** Pretesting **
+`https://devapi.apparyllis.com`
+`wss://devapi.apparyllis.com/v1/socket`
 
 :::info
 
@@ -28,14 +28,13 @@ If you want to use the Pretesting endpoints you will need to make an account on 
 
 :::
 
-
 You may need to get the user id associated with a authentication token, to do this you can [GET /v1/me](../api/get-your-authed-user-id)
 
 The most commonly used endpoints for integrations can be found here:
 
-[Members](../api/members)  
-[Groups](../api/groups)  
-[Custom Fronts](../api/custom-fronts)  
+[Members](../api/members)
+[Groups](../api/groups)
+[Custom Fronts](../api/custom-fronts)
 [Front History](../api/front-history)
 
 ## Rate Limits
