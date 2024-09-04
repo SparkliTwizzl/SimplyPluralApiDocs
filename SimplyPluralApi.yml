@@ -1178,13 +1178,13 @@ paths:
     get:
       security:
         - APITokenAuth: []
-      summary: "Get your authed String Id"
-      description: "Get the String Id associated with your currently authed token"
+      summary: "Get your authed user Id"
+      description: "Get the user Id associated with your currently authed token"
       tags:
         - Users
       responses:
         "200":
-          description: "{Your String Id}"
+          description: "{Your user id}"
         "404":
           description: NOT FOUND
 
@@ -1503,7 +1503,7 @@ paths:
         schema:
           type: string
         required: true
-        description: The String Id to sync
+        description: The member id to sync
     patch:
       security:
         - APITokenAuth: []
