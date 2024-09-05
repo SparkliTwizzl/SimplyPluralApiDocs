@@ -1,8 +1,8 @@
 ---
 id: get-front-history-from-a-system-between-2-timestamps
-title: "Get Front History from a system between two timestamps"
-description: "Get Front History from a system between two timestamps"
-sidebar_label: "Get Front History from a system between two timestamps"
+title: "Get Front History from a system between 2 timestamps"
+description: "Get Front History from a system between 2 timestamps"
+sidebar_label: "Get Front History from a system between 2 timestamps"
 hide_title: true
 hide_table_of_contents: true
 api:
@@ -18,42 +18,12 @@ api:
           "description": "String Id of the system",
         },
       ],
-    "requestBody":
-      {
-        "required": true,
-        "content":
-          {
-            "application/json":
-              {
-                "schema":
-                  {
-                    "type": "object",
-                    "properties":
-                      {
-                        "startTime":
-                          {
-                            "description": "Milliseconds since epoch for this timestamp/date",
-                            "type": "integer",
-                          },
-                        "endTime":
-                          {
-                            "description": "Milliseconds since epoch for this timestamp/date",
-                            "type": "integer",
-                          },
-                      },
-                    "title": "frontHistory",
-                  },
-              },
-          },
-      },
     "responses": { "200": { "description": "OK" }, "404": { "description": "NOT FOUND" } },
-    "description": "Get Front History from a system between two timestamps",
+    "description": "Get Front History from a system between 2 timestamps",
     "method": "get",
     "path": "/v1/frontHistory/{systemId}",
     "servers":
       [{ "url": "https://api.apparyllis.com:8443" }, { "url": "https://devapi.apparyllis.com" }],
-    "jsonRequestBodyExample":
-      { "startTime": 0, "endTime": 0 },
     "info":
       {
         "title": "Simply Plural API",
@@ -62,7 +32,7 @@ api:
       },
     "postman":
       {
-        "name": "Get Front History from a system between two timestamps",
+        "name": "Get Front History from a system between 2 timestamps",
         "description": { "type": "text/plain" },
         "url":
           {
@@ -82,7 +52,6 @@ api:
               ],
           },
         "method": "GET",
-        "body": { "mode": "raw", "raw": '""', "options": { "raw": { "language": "json" } } },
       },
   }
 sidebar_class_name: "get api-method"
@@ -99,9 +68,9 @@ import SchemaTabs from "@theme/SchemaTabs";
 import DiscriminatorTabs from "@theme/DiscriminatorTabs";
 import TabItem from "@theme/TabItem";
 
-## Get Front History from a system between two timestamps
+## Get Front History from a system between 2 timestamps
 
-Get Front History from a system between two timestamps
+Get Front History from a system between 2 timestamps
 
 <details style={{ marginBottom: "1rem" }} data-collapsed={false} open={true}>
   <summary style={{}}>
@@ -121,42 +90,6 @@ Get Front History from a system between two timestamps
     </ul>
   </div>
 </details>
-<MimeTabs className={"openapi-tabs__mime"}>
-  <TabItem label={"application/json"} value={"application/json-schema"}>
-    <details style={{}} className={"openapi-markdown__details"} data-collapsed={false} open={true}>
-      <summary style={{ textAlign: "left" }}>
-        <strong>Request Body</strong>
-        <strong style={{ fontSize: "var(--ifm-code-font-size)", color: "var(--openapi-required)" }}>
-          {" "}
-          required
-        </strong>
-      </summary>
-      <div style={{ textAlign: "left", marginLeft: "1rem" }}></div>
-      <ul style={{ marginLeft: "1rem" }}>
-        <SchemaItem
-          collapsible={false}
-          name={"startTime"}
-          required={false}
-          schemaName={"integer"}
-          qualifierMessage={undefined}
-          schema={{
-            description: "Milliseconds since epoch for this timestamp/date",
-            type: "integer",
-          }}></SchemaItem>
-        <SchemaItem
-          collapsible={false}
-          name={"endTime"}
-          required={false}
-          schemaName={"integer"}
-          qualifierMessage={undefined}
-          schema={{
-            description: "Milliseconds since epoch for this timestamp/date",
-            type: "integer",
-          }}></SchemaItem>
-      </ul>
-    </details>
-  </TabItem>
-</MimeTabs>
 <div>
   <ApiTabs>
     <TabItem label={"200"} value={"200"}>

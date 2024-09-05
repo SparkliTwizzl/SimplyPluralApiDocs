@@ -12,48 +12,25 @@ api:
       [
         {
           "in": "path",
+          "name": "systemId",
+          "schema": { "type": "string" },
+          "required": true,
+          "description": "String Id of the system",
+        },
+        {
+          "in": "path",
           "name": "memberId",
           "schema": { "type": "string" },
           "required": true,
-          "description": "String Id of the member",
+          "description": "Member you wish to get the history from",
         },
       ],
-    "requestBody":
-      {
-        "required": false,
-        "content":
-          {
-            "application/json":
-              {
-                "schema":
-                  {
-                    "type": "object",
-                    "properties":
-                      {
-                        "startTime":
-                          {
-                            "description": "Milliseconds since epoch for this timestamp/date",
-                            "type": "integer",
-                          },
-                        "endTime":
-                          {
-                            "description": "Milliseconds since epoch for this timestamp/date",
-                            "type": "integer",
-                          },
-                      },
-                    "title": "frontHistory",
-                  },
-              },
-          },
-      },
     "responses": { "200": { "description": "OK" }, "404": { "description": "NOT FOUND" } },
     "description": "Get Front History from a member, optionally between two timestamps",
     "method": "get",
     "path": "/v1/frontHistory/member/{memberId}",
     "servers":
       [{ "url": "https://api.apparyllis.com:8443" }, { "url": "https://devapi.apparyllis.com" }],
-    "jsonRequestBodyExample":
-      { "startTime": 0, "endTime": 0 },
     "info":
       {
         "title": "Simply Plural API",
@@ -83,7 +60,7 @@ api:
                   "disabled": false,
                   "description":
                     {
-                      "content": "(Required) String Id of the member",
+                      "content": "(Required) Member you wish to get the history from",
                       "type": "text/plain",
                     },
                   "type": "any",
@@ -93,7 +70,6 @@ api:
               ],
           },
         "method": "GET",
-        "body": { "mode": "raw", "raw": '""', "options": { "raw": { "language": "json" } } },
       },
   }
 sidebar_class_name: "get api-method"
@@ -136,43 +112,11 @@ Get Front History from a member, optionally between two timestamps
           name: "memberId",
           schema: { type: "string" },
           required: true,
-          description: "String Id of the member",
+          description: "Member you wish to get the history from",
         }}></ParamsItem>
     </ul>
   </div>
 </details>
-<MimeTabs className={"openapi-tabs__mime"}>
-  <TabItem label={"application/json"} value={"application/json-schema"}>
-    <details style={{}} className={"openapi-markdown__details"} data-collapsed={false} open={true}>
-      <summary style={{ textAlign: "left" }}>
-        <strong>Request Body</strong>
-      </summary>
-      <div style={{ textAlign: "left", marginLeft: "1rem" }}></div>
-      <ul style={{ marginLeft: "1rem" }}>
-        <SchemaItem
-          collapsible={false}
-          name={"startTime"}
-          required={false}
-          schemaName={"integer"}
-          qualifierMessage={undefined}
-          schema={{
-            description: "Milliseconds since epoch for this timestamp/date",
-            type: "integer",
-          }}></SchemaItem>
-        <SchemaItem
-          collapsible={false}
-          name={"endTime"}
-          required={false}
-          schemaName={"integer"}
-          qualifierMessage={undefined}
-          schema={{
-            description: "Milliseconds since epoch for this timestamp/date",
-            type: "integer",
-          }}></SchemaItem>
-      </ul>
-    </details>
-  </TabItem>
-</MimeTabs>
 <div>
   <ApiTabs>
     <TabItem label={"200"} value={"200"}>
