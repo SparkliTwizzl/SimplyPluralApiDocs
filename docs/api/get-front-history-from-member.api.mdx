@@ -14,13 +14,6 @@ api:
       [
         {
           "in": "path",
-          "name": "systemId",
-          "schema": { "type": "string" },
-          "required": true,
-          "description": "String Id of the system",
-        },
-        {
-          "in": "path",
           "name": "memberId",
           "schema": { "type": "string" },
           "required": true,
@@ -58,16 +51,8 @@ api:
                 {
                   "disabled": false,
                   "description":
-                    { "content": "(Required) String Id of the system", "type": "text/plain" },
-                  "type": "any",
-                  "value": "",
-                  "key": "systemId",
-                },
-                {
-                  "disabled": false,
-                  "description":
                     {
-                      "content": "(Required) Member you wish to get the history from",
+                      "content": "(Required) String Id of the member",
                       "type": "text/plain",
                     },
                   "type": "any",
@@ -124,19 +109,10 @@ Get Front History from a member, optionally between two timestamps
         className={"paramsItem"}
         param={{
           in: "path",
-          name: "systemId",
-          schema: { type: "string" },
-          required: true,
-          description: "String Id of the system",
-        }}></ParamsItem>
-      <ParamsItem
-        className={"paramsItem"}
-        param={{
-          in: "path",
           name: "memberId",
           schema: { type: "string" },
           required: true,
-          description: "Member you wish to get the history from",
+          description: "String Id of the member",
         }}></ParamsItem>
     </ul>
   </div>
